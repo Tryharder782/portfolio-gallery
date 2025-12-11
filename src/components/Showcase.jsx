@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Box, Activity } from 'lucide-react';
 
-const ProjectCard = ({ title, tags, description, demoLink, codeLink, visualType, delay }) => (
+const ProjectCard = ({ title, tags, description, demoLink, codeLink, image, delay }) => (
    <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -11,19 +11,11 @@ const ProjectCard = ({ title, tags, description, demoLink, codeLink, visualType,
    >
       {/* Visual Placeholder */}
       <div className="h-64 bg-black/50 flex items-center justify-center relative overflow-hidden group-hover:bg-black/40 transition-colors">
-         {visualType === 'donut' ? (
-            <img
-               src="/assets/donut-demo.png"
-               alt="Donut Playable Ad Demo"
-               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-         ) : (
-            <img
-               src="/assets/skull-viewer.png"
-               alt="Anatomical Viewer Demo"
-               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-         )}
+         <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         />
 
          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none" />
 
@@ -85,7 +77,7 @@ const Showcase = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                <ProjectCard
                   title="The Juicy Donut"
-                  visualType="donut"
+                  image="/assets/donut-demo.png"
                   tags={['Three.js', 'R3F', '1.2 MB', 'Single File']}
                   description="Hypercasual Playable Ad Prototype. Physics-based interaction with squash & stretch mechanics. Optimized for high CTR and low-end devices."
                   demoLink="https://donut-playable-ad-demo.vercel.app"
@@ -94,12 +86,21 @@ const Showcase = () => {
                />
                <ProjectCard
                   title="Anatomical Viewer"
-                  visualType="skull"
+                  image="/assets/skull-viewer.png"
                   tags={['WebGL', 'Optimization', 'Medical Tech']}
                   description="High-Load WebGL Architecture. Complex 3D model rendering with stable 60 FPS. Demonstrates raycasting, asset management, and performance tuning."
                   demoLink="https://cgma-1.onrender.com/"
                   codeLink="https://github.com/Tryharder782/cgma"
                   delay={0.2}
+               />
+               <ProjectCard
+                  title="Casino Coin Clicker"
+                  image="/assets/casino-demo.png"
+                  tags={['Three.js', 'Particles', 'Interactive', '1.3 MB']}
+                  description="Engaging playable ad with particle effects and 3D coin interaction. Optimized for mobile performance and high engagement metrics."
+                  demoLink="https://casino-demo-pa.vercel.app"
+                  codeLink="https://github.com/Tryharder782/casino-demo-PA"
+                  delay={0.3}
                />
             </div>
          </div>
