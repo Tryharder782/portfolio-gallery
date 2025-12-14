@@ -78,7 +78,7 @@ const Showcase = () => {
                <ProjectCard
                   title="The Juicy Donut"
                   image="/assets/donut-demo.png"
-                  tags={['Three.js', 'R3F', '1.2 MB', 'Single File']}
+                  tags={['Three.js', 'R3F', '403 kB', 'Single File']}
                   description="Hypercasual Playable Ad Prototype. Physics-based interaction with squash & stretch mechanics. Optimized for high CTR and low-end devices."
                   demoLink="https://donut-playable-ad-demo.vercel.app"
                   codeLink="https://github.com/Tryharder782/donut-playable-ad-demo"
@@ -96,7 +96,7 @@ const Showcase = () => {
                <ProjectCard
                   title="Casino Coin Clicker"
                   image="/assets/casino-demo.png"
-                  tags={['Three.js', 'Particles', 'Interactive', '1.3 MB']}
+                  tags={['Three.js', 'Particles', 'Interactive', '405 kB']}
                   description="Engaging playable ad with particle effects and 3D coin interaction. Optimized for mobile performance and high engagement metrics."
                   demoLink="https://casino-demo-pa.vercel.app"
                   codeLink="https://github.com/Tryharder782/casino-demo-PA"
