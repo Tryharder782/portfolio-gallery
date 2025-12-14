@@ -102,6 +102,15 @@ const Showcase = () => {
                   codeLink="https://github.com/Tryharder782/casino-demo-PA"
                   delay={0.3}
                />
+               <ProjectCard
+                  title="Audio Sync PoC"
+                  image="/assets/audio-sync.png"
+                  tags={['Web Audio API', 'React', 'Latency Correction']}
+                  description="Latency-correction engine proof of concept. Synchronizes microphone recording with a backing track using Web Audio API's precise timing."
+                  demoLink="https://audio-sync-poc.vercel.app/"
+                  codeLink="https://github.com/Tryharder782/audio-sync-poc"
+                  delay={0.4}
+               />
             </div>
          </div>
       </section>
