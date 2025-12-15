@@ -111,6 +111,15 @@ const Showcase = () => {
                   codeLink="https://github.com/Tryharder782/audio-sync-poc"
                   delay={0.4}
                />
+               <ProjectCard
+                  title="WebGL Native Particle System"
+                  image="/assets/webgl-particles.png"
+                  tags={['WebGL', 'Native', 'Particles', 'High Performance']}
+                  description="High-performance native WebGL particle system prototype. Simulates thousands of particles with efficient state management and rendering."
+                  demoLink="https://web-gl-native-particle-system-demo.vercel.app/"
+                  codeLink="https://github.com/Tryharder782/WebGL-Native-particle-system-demo"
+                  delay={0.5}
+               />
             </div>
          </div>
       </section>
